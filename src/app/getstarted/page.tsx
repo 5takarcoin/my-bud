@@ -18,11 +18,7 @@ export default function Home() {
       >
         <div className="w-8 h-2 bg-black rounded-full m-auto -mt-4"></div>
       </div>
-      <div
-        className={` h-full duration-200 w-full ${
-          load ? "bg-white" : "bg-purp"
-        }`}
-      ></div>
+      <div className={` h-full duration-200 w-full bg-purp`}></div>
 
       <Link
         href="/getstarted"
@@ -44,6 +40,7 @@ export default function Home() {
           height={38}
           priority
         />
+
         <p className="text-center w-full p-8">I am MyBud</p>
       </div>
 
@@ -62,6 +59,25 @@ export default function Home() {
             priority
           />
         </Link>
+      </div>
+      <div className="z-10 h-full  w-full absolute flex items-center justify-center">
+        <div
+          className={`bg-white mb-24 h-10 w-10 rounded-full duration-300 delay-400 ${
+            load ? "scale-[2500%]" : "scale-0"
+          }`}
+        ></div>
+      </div>
+      <div className="z-11 absolute h-full m-auto flex items-center justify-center">
+        <Image
+          className={`delay-400 w-full mx-auto mb-24 duration-200 ease-out ${
+            load ? "opacity-100" : " opacity-0"
+          }`}
+          src="./circled.svg"
+          alt="glass"
+          width={180}
+          height={38}
+          priority
+        />
       </div>
     </div>
   );
