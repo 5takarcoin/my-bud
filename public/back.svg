@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <filter id="Rectangle_409">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#006665" flood-opacity="0.169" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_6" data-name="Group 6" transform="translate(2303.338 9792.338)">
+    <g data-type="innerShadowGroup">
+      <rect id="Rectangle_409-2" data-name="Rectangle 409" width="31" height="31" rx="11" transform="translate(-2303.338 -9792.338)" fill="rgba(255,255,255,0.23)"/>
+      <g transform="matrix(1, 0, 0, 1, -2303.34, -9792.34)" filter="url(#Rectangle_409)">
+        <rect id="Rectangle_409-3" data-name="Rectangle 409" width="31" height="31" rx="11" fill="#fff"/>
+      </g>
+    </g>
+    <path id="arrow-sm-right-svgrepo-com" d="M17.158,11.649H6m0,0L10.649,7M6,11.649,10.649,16.3" transform="translate(-2299.417 -9788.487)" fill="#a773f4" stroke="#2962ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>
