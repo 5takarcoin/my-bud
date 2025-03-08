@@ -21,7 +21,7 @@ export default function Home() {
       <div className={` h-full duration-200 w-full bg-purp`}></div>
 
       <Link
-        href="/getstarted"
+        href="/features"
         className={`z-100 hover:cursor-pointer bg-white text-center p-8  rounded-full  absolute  bottom-0 mb-8 w-4/5 font-bold text-3xl `}
       >
         Next
