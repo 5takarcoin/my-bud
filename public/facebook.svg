@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <filter id="Rectangle_407">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#006665" flood-opacity="0.169" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2115" data-name="Group 2115" transform="translate(3042 9599)">
+    <g data-type="innerShadowGroup">
+      <rect id="Rectangle_407-2" data-name="Rectangle 407" width="47" height="47" rx="15" transform="translate(-3042 -9599)" fill="rgba(255,255,255,0.23)"/>
+      <g transform="matrix(1, 0, 0, 1, -3042, -9599)" filter="url(#Rectangle_407)">
+        <rect id="Rectangle_407-3" data-name="Rectangle 407" width="47" height="47" rx="15" fill="#fff"/>
+      </g>
+    </g>
+    <g id="facebook-1-svgrepo-com" transform="translate(-3029.494 -9585.995)">
+      <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="10.494" cy="10.494" rx="10.494" ry="10.494" transform="translate(0 0.001)" fill="#1877f2"/>
+      <path id="Path_18" data-name="Path 18" d="M18.405,17.206l.466-2.962H15.955V12.323a1.5,1.5,0,0,1,1.713-1.6h1.327V8.2A16.581,16.581,0,0,0,16.641,8a3.662,3.662,0,0,0-3.972,3.986v2.257H10v2.962h2.67v7.16a10.94,10.94,0,0,0,3.286,0v-7.16Z" transform="translate(-4.004 -3.502)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [sent, setSent] = useState(true);
+  const [sent, setSent] = useState(false);
 
   return (
     <div className="m-auto min-h-[900px] aspect-[8/16] flex flex-col items-center h-screen bg-white shadow-lg overflow-hidden relative">
       <div
-        className={`h-11/12 w-full translate-y-[35%] bg-cyan z-100 absolute bottom-0 rounded-t-4xl transition-all duration-500 ease-in flex justify-between items-center flex-col`}
+        className={`h-11/12 z-[900] w-full translate-y-[35%] bg-cyan absolute bottom-0 rounded-t-4xl transition-all duration-500 ease-in flex justify-between items-center flex-col`}
       >
         <div className="w-8 h-2 bg-mblk rounded-full m-auto -mt-4"></div>
         <div
