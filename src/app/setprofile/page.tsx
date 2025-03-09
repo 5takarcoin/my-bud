@@ -1,5 +1,8 @@
 "use client";
 
+import BuddyCustom from "@/components/BuddyCustom";
+import BuddyName from "@/components/BuddyName";
+import FnLnDp from "@/components/FnLnDp";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -31,8 +34,6 @@ export default function Home() {
           priority
         />
       </div>
-      <p>{started}</p>
-      <p>{page}</p>
       {started && (
         <div
           className={`absolute z-[200] top-12 left-8 h-12 w-12 hover:rotate-3 hover:scale-110 `}
@@ -85,7 +86,7 @@ export default function Home() {
           <div></div>
         )}
 
-        {started && page >= 0 ? (
+        {started && (
           <div className="relative h-full w-full items-center justify-between flex flex-col pb-4">
             <div className="absolute flex gap-4 -mt-6">
               <>
@@ -100,30 +101,9 @@ export default function Home() {
               </>
             </div>
 
-            <p className="text-2xl">Let{`'`}s setup your profile</p>
-            <div className="flex flex-col items-center gap-8">
-              <div>
-                <Image
-                  src="/dpin.svg"
-                  alt="glass"
-                  width={180}
-                  height={38}
-                  priority
-                />
-              </div>
-              <div className="flex flex-col gap-6">
-                <input
-                  type="text"
-                  className="border-b-3 text-center text-xl"
-                  placeholder="First Name"
-                />
-                <input
-                  type="text"
-                  className="border-b-3 text-center text-xl"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div>
+            {page === 0 && <FnLnDp />}
+            {page === 1 && <BuddyName />}
+            {page === 2 && <BuddyCustom />}
 
             <button
               onClick={() => {
@@ -136,8 +116,6 @@ export default function Home() {
               Next
             </button>
           </div>
-        ) : (
-          <div></div>
         )}
 
         <div className="flex justify-end w-full">
