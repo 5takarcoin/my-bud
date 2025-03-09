@@ -34,7 +34,7 @@ export default function Home() {
           className={`delay-400 w-2/5 mx-auto my-12 transition-scale duration-200 ease-out ${
             load ? "translate-y-0 opacity-100" : "translate-y-[400%] opacity-0"
           }`}
-          src="./logo.svg"
+          src="/logo.svg"
           alt="glass"
           width={180}
           height={38}
@@ -52,7 +52,7 @@ export default function Home() {
             className={`delay-300 duration-300   ${
               load ? "scale-100 rotate-0" : "scale-0 rotate-[720deg]"
             }`}
-            src="./back.svg"
+            src="/back.svg"
             alt="glass"
             width={180}
             height={38}
@@ -72,7 +72,7 @@ export default function Home() {
           className={`delay-400 w-full mx-auto mb-24 duration-200 ease-out ${
             load ? "opacity-100" : " opacity-0"
           }`}
-          src="./circled.svg"
+          src="/circled.svg"
           alt="glass"
           width={180}
           height={38}

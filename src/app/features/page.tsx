@@ -27,7 +27,7 @@ export default function Home() {
       <button
         onClick={() => {
           if (page < 2) setPage(page + 1);
-          else router.push("/login");
+          else router.push("/auth/login");
         }}
         className={`z-100 hover:cursor-pointer bg-white text-center p-8  rounded-full  absolute  bottom-0 mb-8 w-4/5 font-bold text-3xl `}
       >
@@ -41,7 +41,7 @@ export default function Home() {
           className={`delay-400 w-screen scale-150 -translate-y-[45%] mx-auto my-12 transition-scale duration-200 ease-out  ${
             load ? "opacity-100" : " opacity-0"
           }`}
-          src="./cloud.svg"
+          src="/cloud.svg"
           alt="glass"
           width={180}
           height={38}
@@ -55,7 +55,7 @@ export default function Home() {
         <Link href={"/getstarted"} className="">
           <Image
             className={`delay-300 duration-300 `}
-            src="./back.svg"
+            src="/back.svg"
             alt="glass"
             width={180}
             height={38}
@@ -72,7 +72,7 @@ export default function Home() {
           className={`delay-400 p-8 w-full mx-auto mb-24 duration-200 ease-out ${
             load ? "opacity-100" : " opacity-0"
           }`}
-          src="./feat1.svg"
+          src="/feat1.svg"
           alt="glass"
           width={180}
           height={38}
@@ -82,7 +82,7 @@ export default function Home() {
           className={`delay-400 p-8 w-full mx-auto mb-24 duration-200 ease-out ${
             load ? "opacity-100" : " opacity-0"
           }`}
-          src="./feat2.svg"
+          src="/feat2.svg"
           alt="glass"
           width={180}
           height={38}
@@ -92,7 +92,7 @@ export default function Home() {
           className={`delay-400 p-8 w-full mx-auto mb-24 duration-200 ease-out ${
             load ? "opacity-100" : " opacity-0"
           }`}
-          src="./feat3.svg"
+          src="/feat3.svg"
           alt="glass"
           width={180}
           height={38}

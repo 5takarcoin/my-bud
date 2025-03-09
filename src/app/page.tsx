@@ -48,7 +48,7 @@ export default function Home() {
               className={` delay-[700ms] w-full duration-200  ${
                 load ? "opacity-100 " : " opacity-0 "
               }`}
-              src="./logo.svg"
+              src="/logo.svg"
               alt="glass"
               width={180}
               height={38}
@@ -59,7 +59,7 @@ export default function Home() {
             className={`delay-500 w-full transition-scale duration-200 ease-out ${
               load ? "scale-y-100" : "scale-y-0 "
             }`}
-            src="./glass.svg"
+            src="/glass.svg"
             alt="glass"
             width={180}
             height={38}
