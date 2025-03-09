@@ -12,6 +12,8 @@
   --font-mono: var(--font-geist-mono);
   --color-purp: #a773f4;
   --color-pink: #eadbf8;
+  --color-cyan: #daf5f7;
+  --color-mblk: #292d32;
 }
 
 @media (prefers-color-scheme: dark) {

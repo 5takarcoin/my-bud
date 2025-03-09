@@ -14,9 +14,9 @@ export default function Home() {
       <div
         className={`${
           !load ? "translate-y-0 " : "translate-y-[80%] "
-        } bg-black h-11/12 w-full z-100 absolute bottom-0 rounded-t-4xl transition-all duration-500 ease-in flex justify-between items-center flex-col`}
+        } bg-mblk h-11/12 w-full z-100 absolute bottom-0 rounded-t-4xl transition-all duration-500 ease-in flex justify-between items-center flex-col`}
       >
-        <div className="w-8 h-2 bg-black rounded-full m-auto -mt-4"></div>
+        <div className="w-8 h-2 bg-mblk rounded-full m-auto -mt-4"></div>
       </div>
       <div className={` h-full duration-200 w-full bg-purp`}></div>
 
