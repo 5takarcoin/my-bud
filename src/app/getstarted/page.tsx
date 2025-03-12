@@ -41,7 +41,13 @@ export default function Home() {
           priority
         />
 
-        <p className="text-center w-full p-8">I am MyBud</p>
+        <p
+          className={`delay-400 text-center w-full p-8 ${
+            load ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          I am MyBud
+        </p>
       </div>
 
       <div

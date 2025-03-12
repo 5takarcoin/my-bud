@@ -12,12 +12,12 @@ const FnLnDp = () => {
         <div className="flex flex-col gap-6">
           <input
             type="text"
-            className="border-b-3 text-center text-xl"
+            className="outline-none border-b-3 text-center text-xl"
             placeholder="First Name"
           />
           <input
             type="text"
-            className="border-b-3 text-center text-xl"
+            className="outline-none border-b-3 text-center text-xl"
             placeholder="Last Name"
           />
         </div>

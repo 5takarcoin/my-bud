@@ -1,7 +1,9 @@
 "use client";
 
+import AllSet from "@/components/AllSet";
 import BuddyCustom from "@/components/BuddyCustom";
 import BuddyName from "@/components/BuddyName";
+import BuddyProps from "@/components/BuddyProps";
 import FnLnDp from "@/components/FnLnDp";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -20,20 +22,22 @@ export default function Home() {
   }, []);
   return (
     <div className="m-auto min-h-[900px] aspect-[8/16] flex flex-col items-center h-screen  bg-white shadow-lg overflow-hidden relative">
-      <div
-        className={` flex flex-col rotate-180 items-start justify-between h-4/5  w-full text-2xl absolute text-center duration-200`}
-      >
-        <Image
-          className={`-z-50 w-screen scale-150 -translate-y-full mx-auto my-12 transition-scale duration-200 ease-out  ${
-            load ? "opacity-100" : " opacity-0"
-          }`}
-          src="/cloud.svg"
-          alt="glass"
-          width={180}
-          height={38}
-          priority
-        />
-      </div>
+      {page < 3 && (
+        <div
+          className={` flex flex-col rotate-180 items-start justify-between h-4/5  w-full text-2xl absolute text-center duration-200`}
+        >
+          <Image
+            className={`-z-50 w-screen scale-150 -translate-y-full mx-auto my-12 transition-scale duration-200 ease-out  ${
+              load ? "opacity-100" : " opacity-0"
+            }`}
+            src="/cloud.svg"
+            alt="glass"
+            width={180}
+            height={38}
+            priority
+          />
+        </div>
+      )}
       {started && (
         <div
           className={`absolute z-[200] top-12 left-8 h-12 w-12 hover:rotate-3 hover:scale-110 `}
@@ -104,32 +108,38 @@ export default function Home() {
             {page === 0 && <FnLnDp />}
             {page === 1 && <BuddyName />}
             {page === 2 && <BuddyCustom />}
+            {page === 3 && <BuddyProps />}
+            {page === 4 && <AllSet />}
 
             <button
               onClick={() => {
                 if (!started) setStarted(true);
-                else if (page < 4) setPage(page + 1);
+                else if (page < 3) setPage(page + 1);
                 else router.push("/creating");
               }}
-              className={`z-100 hover:cursor-pointer bg-mblk text-white text-center p-4  rounded-lg mb-8 w-4/5 font-bold text-3xl `}
+              className={`${
+                page === 3 && "opacity-0 h-60"
+              } z-100 hover:cursor-pointer bg-mblk text-white text-center p-4  rounded-lg mb-8 w-4/5 font-bold text-3xl `}
             >
               Next
             </button>
           </div>
         )}
 
-        <div className="flex justify-end w-full">
-          <Image
-            className={`-translate-8 duration-200 ease-out  ${
-              load ? "opacity-100" : " opacity-0"
-            }`}
-            src="/ghost.svg"
-            alt="glass"
-            width={180}
-            height={38}
-            priority
-          />
-        </div>
+        {page < 1 && (
+          <div className="flex justify-end w-full">
+            <Image
+              className={`-translate-8 duration-200 ease-out  ${
+                load ? "opacity-100" : " opacity-0"
+              }`}
+              src="/ghost.svg"
+              alt="glass"
+              width={180}
+              height={38}
+              priority
+            />
+          </div>
+        )}
       </div>
     </div>
   );

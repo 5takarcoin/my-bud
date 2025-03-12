@@ -10,7 +10,7 @@ const BuddyName = () => {
         <div className="flex flex-col items-center gap-2">
           <input
             type="text"
-            className="text-center text-xl"
+            className="text-center outline-none text-xl"
             placeholder="@username_1234"
           />
           <p className="font-bold text-sm">Suggest username</p>
@@ -18,7 +18,7 @@ const BuddyName = () => {
             {suggestions.map((name, i) => {
               return (
                 <div
-                  className="text-xs border border-purp rounded-full px-2 text-purp py-1"
+                  className="text-xs border border-purp hover:bg-purp duration-75 cursor-pointer hover:text-white rounded-full px-2 text-purp py-1"
                   key={i}
                 >
                   {name}
