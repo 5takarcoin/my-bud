@@ -1,9 +1,12 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="m-auto min-h-[900px] aspect-[8/16] flex flex-col items-center h-screen shadow-lg overflow-hidden relative">
-      <div className="h-12 w-full absolute z-[1999] flex items-center justify-between px-4">
+      <div className="h-12 w-full absolute z-[999] flex items-center justify-between p-8 py-12">
         <button className="flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -181,8 +184,20 @@ export default function Layout({
           </svg>
         </button>
       </div>
-      <div className=" h-full w-full flex flex-col items-center justify-between">
+      <div className=" h-full w-full flex flex-col items-center mb-20 ">
         {children}
+      </div>
+      <div className="absolute bottom-20 h-24 w-24 right-0 z-[1999] flex items-center justify-between">
+        <Link href={"/chat"}>
+          <Image
+            className="hover:scale-105 duration-75 transition-transform"
+            src="/floating.svg"
+            alt="glass"
+            width={180}
+            height={38}
+            priority
+          />
+        </Link>
       </div>
     </div>
   );
