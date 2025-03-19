@@ -1,6 +1,7 @@
 import Image from "next/image";
 import texture from "@/../public/chatext.svg";
 import { MdSend } from "react-icons/md";
+import Link from "next/link";
 
 export default function Layout({
   children,
@@ -13,7 +14,7 @@ export default function Layout({
       className="m-auto bg-pink min-h-[900px] aspect-[8/16] flex flex-col items-center h-screen shadow-lg overflow-hidden relative"
     >
       <div className="h-12 w-full absolute z-[999] flex items-center justify-between p-8 py-10 border-b">
-        <button className="flex items-center justify-center">
+        <Link href={"/main"} className="flex items-center justify-center">
           <div className="flex items-center">
             <Image
               className="w-16"
@@ -26,7 +27,7 @@ export default function Layout({
 
             <h3 className="text-2xl font-bold">My Bud</h3>
           </div>
-        </button>
+        </Link>
         <div className="flex gap-4">
           <button className="flex items-center justify-center">
             <svg

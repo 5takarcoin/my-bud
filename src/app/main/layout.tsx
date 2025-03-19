@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div className="m-auto min-h-[900px] aspect-[8/16] flex flex-col items-center h-screen shadow-lg overflow-hidden relative">
       <div className="h-12 w-full absolute z-[999] flex items-center justify-between p-8 py-12">
@@ -93,6 +98,11 @@ export default function Layout({
           </button>
         </div>
       </div>
+      {/* Come Here */}
+      <div className="h-full w-full absolute z-[999] flex items-center justify-between p-8 py-12">
+        Menu
+      </div>
+
       <div className="h-20 w-full bottom-0 bg-mblk absolute z-[1999] flex items-center justify-around px-4">
         <button>
           <svg
