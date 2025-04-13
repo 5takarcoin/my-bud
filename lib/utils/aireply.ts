@@ -2,7 +2,7 @@ import { GoogleGenerativeAI, GenerativeModel } from "@google/generative-ai";
 
 // **SECURITY WARNING:** For production, do NOT hardcode your API key here.
 // Implement a backend to handle the API calls.
-const API_KEY: string = "AIzaSyCk-PmskyxBqme89wWHlDWaEK6_SHfEIgY";
+const API_KEY: string = "YOUR_API_KEY";
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model: GenerativeModel = genAI.getGenerativeModel({
